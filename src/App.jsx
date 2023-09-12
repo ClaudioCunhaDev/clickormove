@@ -128,7 +128,7 @@ function App() {
           ))}
         </div>
       ) : (
-        <div onTouchMove={handleClick} className="bg-gray-800 h-screen">
+        <div onMouseMove={handleClick} className="bg-gray-800 h-screen">
           {start ? (
             <div className="flex flex-wrap md:flex gap-3 justify-center">
               <button
