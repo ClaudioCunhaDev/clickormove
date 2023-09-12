@@ -56,34 +56,34 @@ function App() {
             {start ? (
               <div className="flex flex-wrap md:flex gap-3 justify-center">
                 <button
-                  onClick={handleRemove}
+                  onTouchStart={handleRemove}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   REMOVE LAST
                 </button>
                 <button
-                  onClick={handleAdd}
+                  onTouchStart={handleAdd}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   ADD LAST
                 </button>
                 <button
-                  onClick={handleDrag}
+                  onTouchStart={handleDrag}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   {drag ? "CLICK GAME" : "DRAG GAME"}
                 </button>
                 <button
-                  onClick={() => setCoordenadas([])}
+                  onTouchStart={() => setCoordenadas([])}
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   CLEAN BOARD
                 </button>
                 <button
-                  onClick={handleStart}
+                  onTouchStart={handleStart}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
@@ -93,7 +93,7 @@ function App() {
             ) : (
               <div className="flex gap-3 justify-center items-center h-screen">
                 <button
-                  onClick={() => setStart(true)}
+                  onTouchStart={() => setStart(true)}
                   className={`flex justify-center items-center w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   START
@@ -127,21 +127,21 @@ function App() {
             {start ? (
               <div className="flex flex-wrap md:flex gap-3 justify-center">
                 <button
-                  onClick={handleRemove}
+                  onTouchStart={handleRemove}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   REMOVE LAST
                 </button>
                 <button
-                  onClick={handleAdd}
+                  onTouchStart={handleAdd}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   ADD LAST
                 </button>
                 <button
-                  onClick={handleDrag}
+                  onTouchStart={handleDrag}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
@@ -149,13 +149,13 @@ function App() {
                 </button>
 
                 <button
-                  onClick={() => setCoordenadas([])}
+                  onTouchStart={() => setCoordenadas([])}
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   CLEAN BOARD
                 </button>
                 <button
-                  onClick={handleStart}
+                  onTouchStart={handleStart}
                   type="button"
                   className={`flex justify-center items-center z-20 w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
@@ -165,7 +165,7 @@ function App() {
             ) : (
               <div className="flex gap-3 justify-center items-center h-screen">
                 <button
-                  onClick={() => setStart(true)}
+                  onTouchStart={() => setStart(true)}
                   className={`flex justify-center items-center w-[5rem] md:w-[10rem] text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br hover:ring-4 hover:outline-none hover:ring-green-300 dark:hover:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-300`}
                 >
                   START
