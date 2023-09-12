@@ -4,16 +4,7 @@ function App() {
   const [coordenadas, setCoordenadas] = useState([]);
   const [coordenadasRemovidas, setCoordenadasRemovidas] = useState([]);
   const [drag, setDrag] = useState(false);
-  const cores = [
-    "red",
-    "yellow",
-    "green",
-    "blue",
-    "indigo",
-    "purple",
-    "pink",
-    "lime",
-  ];
+  const cores = ["red", "green"];
   const [start, setStart] = useState(false);
 
   const handleClick = (e) => {
